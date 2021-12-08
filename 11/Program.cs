@@ -69,6 +69,7 @@ namespace _11
             var maxPrice = products.Max(e => e.Price);
             var alphabetе = products.OrderBy(e => e.Name);
             var countt = products.OrderBy(e => e.Count);
+
             var five = products.Where(e => e.Upc != 1253588).Where(e => e.Name.Contains("cola")).OrderByDescending(e => e.Price).Select(e => e.Name += ';').Take(3);
 
             Console.WriteLine("------ список товаров для заданного наименования  ------");
