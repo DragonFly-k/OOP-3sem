@@ -18,7 +18,6 @@ namespace _14
         public int Sum { get; set; }
         [NonSerialized]
         public int date;
-
         public Kvitant() { }
         public Kvitant(int date, double fine, int sum)
         {
@@ -72,7 +71,6 @@ namespace _14
                     break;
             }
         }
-
         public static void Deserialize(string file)
         {
             string format = file.Split('.').Last();

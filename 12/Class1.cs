@@ -88,4 +88,4 @@ namespace _12
             return Activator.CreateInstance(Type.GetType(name));
         }
     }
-}
+} 

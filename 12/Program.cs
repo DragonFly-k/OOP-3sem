@@ -33,7 +33,7 @@ namespace _12
                 sw.WriteLine(Reflector.Create(name).ToString());
                 sw.WriteLine("****************************************************************************");
             }
-            name = "System.String";
+            name = "System.Type";
             using (StreamWriter sw = new StreamWriter(@"Reflection.txt", true, Encoding.Default))
             {
                 sw.WriteLine("-----определение имени сборки------");
@@ -49,6 +49,7 @@ namespace _12
                 sw.WriteLine("-----выводит по имени класса имена методов------");
                 Reflector.MethodType(name, "value", sw);
             }
+
         }
     }
 }

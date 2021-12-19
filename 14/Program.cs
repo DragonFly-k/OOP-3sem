@@ -58,13 +58,12 @@ namespace _14
                 Console.WriteLine(n.InnerText);
 
             Console.WriteLine();
-            XDocument xdoc = new XDocument(new XElement("phones",
-          new XElement("Game",
-          new XAttribute("name", "Super cow"),
+            XDocument xdoc = new XDocument(new XElement("Games",
+          new XElement("Game", new XAttribute("name", "Super cow"),
           new XElement("company", "Microsoft"),
           new XElement("price", "40000")),
-          new XElement("phone",
-          new XAttribute("Game", "Angry birds"),
+
+          new XElement("Game", new XAttribute("name", "Angry birds"),
           new XElement("company", "X-box"),
           new XElement("price", "33000"))));
             xdoc.Save("Games.xml");

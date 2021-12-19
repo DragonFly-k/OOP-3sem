@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace _12
 {
-
     class Product : Int
     {
-        // fields
-        const int MAX_ID = 10; // const
+        const int MAX_ID = 10; 
         static int id;
         string name;
         int upc;
@@ -18,8 +16,6 @@ namespace _12
         int price;
         int bestBefore;
         int count;
-
-        // constructors
         public Product(string name, int upc, int price, int bestBefore, int count)
         {
             if (!string.IsNullOrEmpty(name) && id <= MAX_ID)
@@ -57,8 +53,6 @@ namespace _12
                 throw new Exception("Cannot create a product");
             }
         }
-
-        // getters and setters
         public string Producer
         {
             get
@@ -159,8 +153,7 @@ namespace _12
                     throw new Exception("Count is incorrect");
                 }
             }
-        }
-        //methods
+        }       
         public override string ToString()
         {
             return $"name: {Name}, price {Price}, producer {Producer}";
